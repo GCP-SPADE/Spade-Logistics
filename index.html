@@ -893,8 +893,8 @@
   // distance, same as before. Plan image is 4167x2003px. Transform solved
   // from 3 field GPS control points; recomputed for every new plan image.
   const IMG_W = 4167, IMG_H = 2003;
-  const T = { ax:76395.922356, ay:-95287.187842, ac:10692185.397138,
-              bx:-18044.309000, by:-35131.992282, bc:-282569.695624 };
+  const T = { ax:157986.554609, ay:-268799.147723, ac:24899626.938545,
+              bx:-34948.818373, by:817.411113, bc:-3226165.327519 };
   const T_DET = T.ax*T.by - T.ay*T.bx;
 
   function gpsToPixel(lat, lon){
