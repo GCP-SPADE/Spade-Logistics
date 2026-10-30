@@ -365,6 +365,7 @@
   .legend-contact{margin-top:14px;padding-top:12px;border-top:1px solid var(--border,#ddd);font-size:15px;line-height:1.5;color:var(--text);}
   .legend-contact .lc-main{display:block;margin-top:4px;white-space:nowrap;font-size:clamp(11px,3.7vw,19px);font-weight:600;line-height:1.35;}
   .legend-contact a{color:inherit;font-weight:600;}
+  .sw-ofci-dot{background:repeating-linear-gradient(90deg,#E8A324 0 4px,transparent 4px 8px);height:4px;}
   .sw-closure{background:#D33B1E;}
   .sw-bus{background:repeating-linear-gradient(90deg,#F2C200 0 4px,transparent 4px 7px);height:3px;}
   .sw-fence{background:#fff;height:6px;border:1px solid #111;border-radius:2px;box-sizing:border-box;}
@@ -852,7 +853,7 @@
       <div class="legend-item"><span class="swatch sw-bus"></span>Bus path</div>
       <div class="legend-item"><span class="swatch sw-walk"></span>Pedestrian path</div>
       <div class="legend-item"><span class="swatch arrow"><svg viewBox="0 0 20 12"><path d="M1 6H13M10 1.5L17 6L10 10.5Z" fill="#2B5BA6" stroke="#2B5BA6" stroke-width="2.5" stroke-linejoin="round"/></svg></span>Vehicle traffic</div>
-      <div class="legend-item"><span class="swatch arrow"><svg viewBox="0 0 20 12"><path d="M1 6H13M10 1.5L17 6L10 10.5Z" fill="#E8A324" stroke="#E8A324" stroke-width="2.5" stroke-linejoin="round"/></svg></span>OFCI path</div>
+      <div class="legend-item"><span class="swatch sw-ofci-dot"></span>OFCI path</div>
       <div class="legend-item"><span class="swatch dot sw-guard"></span>Guard shack</div>
       <div class="legend-item"><span class="swatch dot sw-busstop"></span>Bus stop</div>
       <div class="legend-item"><span class="swatch sw-fence"></span>Construction fence</div>
@@ -1817,7 +1818,7 @@
           ['Bus path',          function(x0,y){ line(x0,y,'#F2C200',7,9); }],
           ['Pedestrian path',   function(x0,y){ line(x0,y,'#3FA34D',8); }],
           ['Vehicle traffic',   function(x0,y){ arrow(x0,y,'#2B5BA6'); }],
-          ['OFCI path',         function(x0,y){ arrow(x0,y,'#E8A324'); }],
+          ['OFCI path',         function(x0,y){ line(x0,y,'#E8A324',8,5); }],
           ['Guard shack',       function(x0,y){ dot(x0,y,'#E23FA0'); }],
           ['Bus stop',          function(x0,y){ dot(x0,y,'#1FB5C9'); }],
           ['Construction fence',function(x0,y){ fence(x0,y); }]
