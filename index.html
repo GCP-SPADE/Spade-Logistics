@@ -1664,17 +1664,15 @@
   // the published site. Use "Copy" to relay the list back so it can be baked
   // into the next published version (DEFAULT_UPDATES), and mention anything
   // that should be marked up on the plan.
-  const UPDATES_KEY = 'spade-updates-v6';
+  const UPDATES_KEY = 'spade-updates-v7';
   const UPDATE_TYPES = ['closed','access','path','general'];
   const UPDATE_TYPE_LABEL = { closed:'Road Closed', access:'Controlled Access', path:'Path Change', general:'General' };
   const UPDATE_DAYS = 3;
   // date is ISO (YYYY-MM-DD), e.g. {id:'u1', date:'2026-10-30', type:'closed', title:'...', note:'...'}
   const DEFAULT_UPDATES = [
-    {id:'g1', date:'2026-11-10', type:'path', title:'Hub/CLC roads reroute', note:'Reroute of the Hub/CLC roads.'},
-    {id:'g2', date:'2026-11-15', type:'path', title:'East DC2 road moving further east', note:'Road on the east side of DC2 is moving slightly more east.'},
-    {id:'g3', date:'2026-11-30', type:'path', title:'Hub/CLC roads slight reroute', note:'Slight reroute of the Hub/CLC roads.'},
-    {id:'g4', date:'2026-12-15', type:'closed', title:'Road closure, west side of the CLC', note:'Closure of the road on the west side of the CLC.'},
-    {id:'g5', date:'2026-12-19', type:'closed', title:'Road closure, east side of the CLC', note:'Closure of the road on the east side of the CLC.'}
+    {id:'h1', date:'2026-11-17', type:'path', title:'DC1 to DC2 road straightened, walkway change', note:'Road from DC1 to DC2 gets straight. Change in walkway from DC2 to DC1.'},
+    {id:'h2', date:'2026-11-21', type:'path', title:'East side of DC1 spine narrows to buggy only', note:'Road slightly narrows to buggy only on the east side of the DC1 spine.'},
+    {id:'h3', date:'2026-12-15', type:'closed', title:'Road closure, southwest side of DC2', note:'Slight road closure on the southwest side of DC2.'}
   ];
   let updatesData = DEFAULT_UPDATES;
   try{
